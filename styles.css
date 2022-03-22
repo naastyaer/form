@@ -1,0 +1,194 @@
+:root {
+    --blue-color: #0284c7;
+    --darkblue-color:#043e5c;
+    --grey-color: #bdbdbd;
+    --pink-color: #facfd1;
+}
+body{
+    background-color: var(--grey-color);
+    font-family: 'Nunito Sans'; 
+    font-family: 'Smooch Sans', sans-serif;
+}
+#content{
+    max-width: 1024px;
+    margin: 0 auto;  
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction:row; 
+    margin-bottom: 100px;
+    border-radius: 7px;
+    box-shadow: #737373;
+}
+.title{
+    color:  black;
+    font-size: 15px;
+    font-weight: 600;
+    font-style:normal;
+    margin-top: 30px;
+    position: relative;
+    margin-right: 30px;
+}
+#wrapper{
+    max-width: 500px;
+    margin: 0 auto; 
+    
+}
+
+/*первый блок*/
+.img{
+    max-width: 450px;
+    border-radius: 7px;
+}
+#title_blue{
+    color:  var(--blue-color);
+    font-size: 20px;
+    font-weight: 700;
+    font-style:normal;
+    margin-top: 30px;
+    position: relative;
+    margin-right: 30px;
+}
+#form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#contact_name{
+    margin-right: 30px;
+}
+#contact_email{
+    margin-right: 30px;
+}
+    
+.contact_input{
+    font-size: 20px;
+    width: 230px;
+    height: 34px;
+    border-radius: 7px;
+    border-color:var(--grey-color);
+    border: 1px solid  var(--grey-color);
+    margin-bottom: 30px;
+    
+}
+input:hover {
+    outline-color: var(--blue-color);
+    }
+
+
+.form_block{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+
+#row_border{
+    border-bottom: 1px solid var(--pink-color);
+}
+label{
+    margin-bottom: 3px;
+}
+/*блок адрес*/
+#country:hover {
+    border-color: var(--blue-color);
+    }
+.address_input{
+    font-size: 20px;
+    width: 130px;
+    height: 34px;
+    border-radius: 7px;
+    border-color: var(--grey-color);
+    border: 1px solid  var(--grey-color);
+    margin-bottom: 30px;
+}
+#address_input_delivery_address{
+    font-size: 20px;
+    width: 495px;
+    height: 34px;
+    border-radius: 7px;
+    border-color: var(--grey-color);
+    border: 1px solid  var(--grey-color);
+    margin-bottom: 30px;
+
+}
+#form_address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+select{
+    width: 132px;
+    height: 36px;
+    border-radius: 7px;
+    border-color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+    margin-bottom: 30px;
+}
+#form_block_border{
+    border-bottom: 1px solid var(--pink-color);
+}
+/*блок уведомления*/
+p{
+    color: #737373;
+    font-size: 15px;
+    font-weight: 300;
+    font-style:normal;
+    margin-top: 10px;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#checkbox{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--pink-color);
+}
+
+.checkbox_text{
+    display: flex;
+    flex-direction: row;
+}
+.checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--grey-color);
+    border-radius: 3px;
+}
+.checkbox:hover {
+    border-color: var(--blue-color);
+    }
+.checkbox:checked{
+    background-color: var(--pink-color);
+    background-image: url("check_white.png");
+    background-position: center;
+    background-size: contain;
+}
+button{
+    width: 500px;
+    height: 40px;
+    background-color:var(--blue-color);
+    border-radius: 5px;
+    border: 0px;
+    color:  white;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background:  var(--darkblue-color);
+}
+#checkbox_text_border{
+    margin-bottom: 30px;
+}
+.label_checkbox{
+    margin-top: 5px;
+    margin-left: 5px;
+}

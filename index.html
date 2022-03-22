@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Регистрация</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;500;700&display=swap" rel="stylesheet">
+
+
+    <body>
+        <div id="content">
+           <img src="mountains-2.jpg" class="img">
+            <div id="wrapper">
+                <h1 id="title_blue">Регистрация</h1>
+                    <div id="form">
+                     <form action="https://www.bit-by-bit.ru/form-submit">
+                     <div class="row">
+                       <div class="form_block">
+                         <label for="contact_name">Имя</label>
+                         <input class="contact_input"  type="text" name="name" id="contact_name">
+                       </div>
+                       <div class="form_block">
+                        <label for="contact_surname">Фамилия</label>
+                        <input  class="contact_input" type="text" name="surname" id="contact_surname">
+                      </div>
+                    </div>
+                    <div  class="row" id="row_border" >
+                        <div class="form_block">
+                            <label for="contact_email">Электронная почта</label>
+                             <input class="contact_input"  type="text" name="email" id="contact_email">
+                        </div>
+                        <div class="form_block" >
+                            <label for="contact_telephone">Телефон</label>
+                           <input class="contact_input"  type="text" name="telephone" id="contact_telephone">
+                        </div>  
+                     </div>
+                     </form>
+                    </div>
+                    <h2 class="title">Адрес доставки</h2>
+                    <div id="form_address">
+                        <div class="form_block"> 
+                        <label for="country">Страна</label>
+                        <select id="country" name="country" >
+                            <option value="rus">Россиия</option>
+                            <option value="uk">Украина</option>
+                            <option value="pol">Польша</option>
+                            <option value="bel">Беларусь</option>
+                        </select >
+                        </div>
+                        <div class="form_block">
+                        <label for="address_city">Город</label>
+                        <input  class="address_input" type="text" name="city" id="address_city">
+                        </div>
+                        <div class="form_block">
+                        <label for="address_postal_code">Почтовый индекс</label>
+                        <input class="address_input" type="text" name="postal_code" id="address_postal_code">
+                        </div>
+                    </div>
+                    <div class="form_block" id="form_block_border">
+                    <label for="address_delivery_address">Адрес доставки (улица, дом, квартира)</label>
+                    <input id="address_input_delivery_address" type="text" name="delivery_address" id="address_delivery_address">
+                    </div>
+                    <h2 class="title">Уведомлять об акциях и скидках</h2>
+                    <p>Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                    <div id="checkbox">
+                    <div class="checkbox_text"><input id="notification_email" type="checkbox"  class="checkbox" name="notification">
+                    <label class="label_checkbox" for="notification_email">По электронной почте</label></div>
+                    <div class="checkbox_text"><input id="notification_sms" type="checkbox"  class="checkbox" name="notification">
+                    <label  class="label_checkbox" for="notification_sms">По СМС</label></div>
+                    <div class="checkbox_text" id="checkbox_text_border"><input id="notification_push" type="checkbox" class="checkbox" name="notification">
+                    <label class="label_checkbox" for="notification_push">Уведомления в приложении</label></div>
+                    </div>
+                    <button type="submit">Создать аккаунт</button>
+            </div>
+        </div>
+    </body>
+</html>
