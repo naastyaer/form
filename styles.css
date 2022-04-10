@@ -4,6 +4,9 @@
     --grey-color: #bdbdbd;
     --pink-color: #facfd1;
 }
+* {
+    box-sizing: border-box;
+}
 body{
     background-color: var(--grey-color);
     font-family: 'Nunito Sans'; 
@@ -122,8 +125,8 @@ label{
     margin-top: 30px;
 }
 select{
-    width: 132px;
-    height: 36px;
+    width: 130px;
+    height: 34px;
     border-radius: 7px;
     border-color: var(--grey-color);
     border: 1px solid var(--grey-color);
